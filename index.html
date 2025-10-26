@@ -43,15 +43,16 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+
+        <button data-menu-close class="burger-btn" type="button">
           <svg class="burger-icon" width="24px" height="24px">
             <use href="./images/icons.svg#icon-burger-icon"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-btn" type="button">
+          <button data-menu-open class="mobile-menu-btn" type="button">
             <svg class="modal-btn-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -83,7 +84,7 @@
               </li>
             </ul>
           </address>
-          <ul class="social-list">
+          <ul class="social-list-mob">
             <li class="social-item">
               <a href="https://www.instagram.com" class="social-link">
                 <svg class="social-icon" width="24" height="24">
@@ -660,7 +661,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="container footer-social">
+        <div class="footer-social">
           <p class="footer-info">Social media</p>
           <ul class="social-icon-groupss">
             <li class="social-list">
@@ -717,7 +718,7 @@
       </div>
     </footer>
     <!-- Modal Window -->
-    <div class="backdrop is-open hidden" data-modal>
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
@@ -813,5 +814,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
